@@ -11,7 +11,11 @@
 
         [Required]
         [StringLength(NameMaxLength, MinimumLength = NameMinLength)]
-        public string Name { get; set; } 
+        public string Name { get; set; }
+
+        [Required]
+        [StringLength(CityMaxLength, MinimumLength = CityMinLength)]
+        public string City { get; set; }
 
         [Required]
         [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength)]

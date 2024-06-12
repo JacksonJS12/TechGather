@@ -22,6 +22,7 @@
             Event eEvent = new Event
             {
                 Name = model.Name,
+                City = model.City,
                 CategoryId = model.CategoryId,
                 Description = model.Description,
                 Date = model.Date,

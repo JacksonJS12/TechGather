@@ -16,10 +16,15 @@
         public Guid Id { get; set; }
 
         [Required]
-        [StringLength(NameMaxLength, MinimumLength = NameMinLength)]
-        public string Name { get; set; } 
+        [MaxLength(NameMaxLength)]
+        public string Name { get; set; }
 
-        [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength)]
+        [Required]
+        [MaxLength(CityMaxLength)]
+        public string City { get; set; }
+
+        [Required]
+        [MaxLength(DescriptionMaxLength)]
         public string Description { get; set; } 
 
         [Required]
