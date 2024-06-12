@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using TechGather.Data;
 
@@ -11,9 +12,10 @@ using TechGather.Data;
 namespace TechGather.Web.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240612223945_InitialDbMigration")]
+    partial class InitialDbMigration
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -239,29 +241,7 @@ namespace TechGather.Web.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Categories", (string)null);
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Name = "Conference"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Name = "Training"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Name = "Workshop"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Name = "Other"
-                        });
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("TechGather.Data.Models.Event", b =>
@@ -286,10 +266,6 @@ namespace TechGather.Web.Data.Migrations
                         .HasColumnType("bit")
                         .HasDefaultValue(true);
 
-                    b.Property<string>("Lecturers")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(20)
@@ -299,7 +275,7 @@ namespace TechGather.Web.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("Events", (string)null);
+                    b.ToTable("Events");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
