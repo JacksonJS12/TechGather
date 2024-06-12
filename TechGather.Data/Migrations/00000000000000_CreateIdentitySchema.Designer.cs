@@ -8,7 +8,7 @@ namespace TechGather.Web.Data.Migrations
     using TechGather.Data;
 
 
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(TechGatherDbContext))]
     [Migration("00000000000000_CreateIdentitySchema")]
     partial class CreateIdentitySchema
     {

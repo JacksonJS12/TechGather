@@ -1,17 +1,11 @@
-﻿namespace TechGather.Data.Models
+﻿namespace TechGather.Web.ViewModels.Event
 {
-    using System.ComponentModel.DataAnnotations.Schema;
     using System.ComponentModel.DataAnnotations;
 
+    using Category;
     using static Common.EntityValidationConstants.Event;
-    using System.Collections.Generic;
-
-    public class Event
+    public class AddEventViewModel
     {
-        public Event()
-        {
-            this.Id = Guid.NewGuid();
-        }
         [Key]
         public Guid Id { get; set; }
 
@@ -19,6 +13,7 @@
         [StringLength(NameMaxLength, MinimumLength = NameMinLength)]
         public string Name { get; set; } 
 
+        [Required]
         [StringLength(DescriptionMaxLength, MinimumLength = DescriptionMinLength)]
         public string Description { get; set; } 
 
@@ -29,12 +24,8 @@
         public int CategoryId { get; set; }
 
         [Required]
-        [ForeignKey(nameof(CategoryId))]
-        public virtual Category Category { get; set; }
+        public string Lectures { get; set; }
 
-        public bool IsActive { get; set; }
-
-        [Required]
-        public string Lecturers { get; set; }
+        public IEnumerable<CategoryViewModel> Categories { get; set; } = new List<CategoryViewModel>();
     }
 }

@@ -1,4 +1,4 @@
-namespace TechGather.Web.Models
+namespace TechGather.Web.ViewModels
 {
     public class ErrorViewModel
     {

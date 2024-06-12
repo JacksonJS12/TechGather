@@ -9,7 +9,7 @@
 
         [Required]
         [MaxLength(NameMaxLength)]
-        public string Name { get; set; } = null!;
+        public string Name { get; set; }
 
         public virtual ICollection<Event> Events { get; set; } = new HashSet<Event>();
     }

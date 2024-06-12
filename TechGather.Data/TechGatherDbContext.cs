@@ -7,10 +7,10 @@
     using Configurations;
 
 
-    public class ApplicationDbContext : IdentityDbContext
+    public class TechGatherDbContext : IdentityDbContext
     {
         private readonly bool seedDb;
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options, bool seedDb = true)
+        public TechGatherDbContext(DbContextOptions<TechGatherDbContext> options, bool seedDb = true)
             : base(options)
         {
         }

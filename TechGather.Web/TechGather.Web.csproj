@@ -24,7 +24,7 @@
     <ProjectReference Include="..\TechGather.Common\TechGather.Common.csproj" />
     <ProjectReference Include="..\TechGather.Data\TechGather.Data.csproj" />
     <ProjectReference Include="..\TechGather.Services\TechGather.Services.csproj" />
-    <ProjectReference Include="..\TechGather.ViewModels\TechGather.ViewModels.csproj" />
+    <ProjectReference Include="..\TechGather.ViewModels\TechGather.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

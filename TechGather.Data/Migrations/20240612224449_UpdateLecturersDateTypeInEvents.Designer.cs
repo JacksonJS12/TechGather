@@ -11,7 +11,7 @@ using TechGather.Data;
 
 namespace TechGather.Web.Data.Migrations
 {
-    [DbContext(typeof(ApplicationDbContext))]
+    [DbContext(typeof(TechGatherDbContext))]
     [Migration("20240612224449_UpdateLecturersDateTypeInEvents")]
     partial class UpdateLecturersDateTypeInEvents
     {

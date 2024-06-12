@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TechGather.Data\TechGather.Data.csproj" />
+    <ProjectReference Include="..\TechGather.ViewModels\TechGather.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>

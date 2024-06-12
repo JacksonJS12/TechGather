@@ -11,15 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{80D23C0E-6
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{FDA3EA2D-65DF-4B8B-AFF5-93C4037B738F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGather.Web", "TechGather.Web\TechGather.Web.csproj", "{82CFA02B-3F60-4ECF-84E3-FD9CDF2FDD72}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechGather.Web", "TechGather.Web\TechGather.Web.csproj", "{82CFA02B-3F60-4ECF-84E3-FD9CDF2FDD72}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGather.Data", "TechGather.Data\TechGather.Data.csproj", "{050B15FE-5E2C-493E-A922-A175F58D6BD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechGather.Data", "TechGather.Data\TechGather.Data.csproj", "{050B15FE-5E2C-493E-A922-A175F58D6BD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGather.Common", "TechGather.Common\TechGather.Common.csproj", "{E8B8BFAF-1C75-407F-95A9-A99BDB836108}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechGather.Common", "TechGather.Common\TechGather.Common.csproj", "{E8B8BFAF-1C75-407F-95A9-A99BDB836108}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGather.Services", "TechGather.Services\TechGather.Services.csproj", "{CDA35503-ACD0-4846-8DA7-CBC919348E8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechGather.Services", "TechGather.Services\TechGather.Services.csproj", "{CDA35503-ACD0-4846-8DA7-CBC919348E8A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TechGather.ViewModels", "TechGather.ViewModels\TechGather.ViewModels.csproj", "{447A65C2-8B61-4B08-A052-845B53DBD283}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TechGather.Web.ViewModels", "TechGather.ViewModels\TechGather.Web.ViewModels.csproj", "{447A65C2-8B61-4B08-A052-845B53DBD283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

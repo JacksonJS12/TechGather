@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using TechGather.Web.Models;
+using TechGather.Web.ViewModels;
 
 namespace TechGather.Web.Controllers
 {
