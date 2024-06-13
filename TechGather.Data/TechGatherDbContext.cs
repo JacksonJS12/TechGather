@@ -21,10 +21,10 @@
         {
             builder.ApplyConfiguration(new EventEntityConfiguration());
 
-            if (this.seedDb)
-            {
+            //if (this.seedDb)
+            //{
                 builder.ApplyConfiguration(new CategorySeederEntityConfiguration());
-            }
+            //}
 
             base.OnModelCreating(builder);
         }

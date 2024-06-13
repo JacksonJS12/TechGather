@@ -33,6 +33,11 @@
 
             return RedirectToAction("All", "Event");
         }
+        public async Task<ActionResult> All()
+        {
+            var model = await this.eventService.GetAllEventsAsync();
 
+            return View(model);
+        }
     }
 }

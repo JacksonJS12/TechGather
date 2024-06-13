@@ -50,5 +50,20 @@
 
             return model;
         }
+        public async Task<IEnumerable<AllEventViewModel>> GetAllEventsAsync()
+        {
+            return await this.dbContext
+                .Events
+                .Select(e => new AllEventViewModel
+                {
+                    Id = e.Id.ToString(),
+                    Name = e.Name,
+                    Date = e.Date.ToString("dd/MM/yyyy HH:mm"),
+                    City = e.City,
+                    Lectures = e.Lecturers,
+                    Category = e.Category.Name,
+
+                }).ToArrayAsync();
+        }
     }
 }

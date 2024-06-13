@@ -7,5 +7,6 @@
     {
         Task AddEventAsync(AddEventViewModel model);
         Task<AddEventViewModel> GetNewAddEventViewModelAsync();
+        Task<IEnumerable<AllEventViewModel>> GetAllEventsAsync();
     }
 }

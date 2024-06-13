@@ -240,6 +240,28 @@ namespace TechGather.Web.Data.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Categories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Conference"
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Name = "Training"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            Name = "Workshop"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            Name = "Other"
+                        });
                 });
 
             modelBuilder.Entity("TechGather.Data.Models.Event", b =>
